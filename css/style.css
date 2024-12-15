@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* background-color: rgb(53, 51, 51); */
 }
 
 body {
@@ -43,7 +42,7 @@ ul {
 
 .logo a {
   color: whitesmoke;
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
   font-weight: 700;
   transition: all 0.7s;
 }
@@ -311,9 +310,8 @@ ul {
   height: fit-content;
   width: 35%;
 }
-#left-mg{
+#left-mg {
   margin-right: 3.75rem;
-
 }
 
 .main-taitel {
@@ -373,7 +371,7 @@ ul {
   max-width: 370px;
 }
 
-.anime-cart .ul{
+.anime-cart .ul {
   display: flex;
   flex-direction: row;
   font-size: 14px;
@@ -386,13 +384,17 @@ ul {
 .anime-cart .ul li a {
   color: rgba(245, 245, 245, 0.719);
 }
-.anime-cart .ul i{
+.anime-cart .ul i {
   color: rgba(255, 217, 0, 0.836);
   margin-top: 2px;
 }
 
 .right {
-  background-image: linear-gradient(to bottom, rgb(114, 107, 68),rgb(53, 51, 51));
+  background-image: linear-gradient(
+    to bottom,
+    rgb(114, 107, 68),
+    rgb(53, 51, 51)
+  );
   border-radius: 10px;
   width: 68%;
   height: fit-content;
@@ -400,7 +402,7 @@ ul {
   flex-direction: column;
 }
 
-.all-anime{
+.all-anime {
   margin: 10px 20px;
   display: flex;
   flex-direction: row;
@@ -408,27 +410,28 @@ ul {
   flex-wrap: wrap;
 }
 
-.all-anime-img img{
+.all-anime-img img {
   width: 150px;
   height: 220px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
-.all-anime-img{
+.all-anime-img {
   position: relative;
   margin-right: 20px;
   transition: all 0.7s;
 }
-.all-anime-img:hover{
+.all-anime-img:hover {
   opacity: 80%;
   transform: scale(1.08);
-  .anime-resulation , .anime-rat , .anime-view{
+  .anime-resulation,
+  .anime-rat,
+  .anime-view {
     opacity: 1;
   }
- 
 }
 
-.anime-cat{
+.anime-cat {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -440,7 +443,7 @@ ul {
   left: 3px;
 }
 
-.anime-rat{
+.anime-rat {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -454,7 +457,7 @@ ul {
   opacity: 0;
   transition: ease 0.7s;
 }
-.anime-view{
+.anime-view {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -469,7 +472,7 @@ ul {
   transition: all 1s;
 }
 
-.anime-resulation{
+.anime-resulation {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -484,47 +487,50 @@ ul {
   transition: all 1.3s;
 }
 
-#main{
+#main {
   flex-direction: row-reverse;
   margin-top: 30px;
 }
 
-#right{
+#right {
   padding-bottom: 2px;
   margin-right: 60px;
   height: fit-content;
 }
-.Series .right{
+.Series .right {
   width: 100%;
   margin-top: 20px;
 }
-#Series .main-taitel{
+#Series .main-taitel {
   padding: 20px 40px;
 }
-.paragraphe{
+.paragraphe {
   color: whitesmoke;
 }
 
 /************* End Main Content  ************/
 
-.contact-About{
+.contact-About {
   width: 100%;
   height: 27rem;
   margin-top: 2%;
   border-radius: 10px;
 }
 
-#about{
+#about {
+  color: whitesmoke;
+  font-size: 1rem;
+}
+#aboutt {
   color: whitesmoke;
   font-size: 1rem;
 }
 
-.screen{
-  font-family: 'Montserrat', sans-serif;
+.screen {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
 }
-
 
 .container-form {
   flex: 0 1 700px;
@@ -538,7 +544,7 @@ ul {
 }
 
 .screen:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -547,7 +553,6 @@ ul {
   bottom: 0;
   border-radius: 15px;
   z-index: -1;
-
 }
 
 .screen-body {
@@ -574,7 +579,7 @@ ul {
 }
 
 .app-title:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -604,7 +609,7 @@ ul {
 }
 
 .app-form-control {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
   width: 100%;
@@ -616,12 +621,12 @@ ul {
   font-size: 14px;
   text-transform: uppercase;
   outline: none;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
 
-.app-form-control::placeholder{
+.app-form-control::placeholder {
   color: rgba(245, 245, 245, 0.664);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
 }
@@ -641,43 +646,371 @@ ul {
 }
 
 .app-form-button:hover {
-  color:gold;
+  color: gold;
 }
 
 
-@media screen and (max-width: 520px) {
-  .screen-body {
+
+/* laptop screen */
+
+@media (max-width: 1433px) {
+  ul{
+    gap: 1.25rem;
+  }
+  .navigation {
+    height: auto;
+    padding: 1rem 1rem;
+    margin: 0;
+  }
+
+  .logo a {
+    font-size: 16px;
+  }
+  .logo i {
+    font-size: 15px;
+  }
+  .nav-list li a{
+    font-size: 14px;
+  }
+  .box{
+    padding: 3px 6px ;
+  }
+  .box a, .box i{
+    font-size: 10px;
+  }
+
+  .sm{
+    gap: 3px;
+  }
+  .sm i{
+    font-size: 10px;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .poster img{
+    width: 16rem;
+  }
+  .anime-cart h5 {
+    font-size: 16px;
+  }
+  .anime-cart .ul li a {
+    font-size: 13px;
+  }
+
+  .all-anime-img img{
+    width: 120px;
+    height: 170px;
+  }
+
+}
+
+@media (max-width: 1180px){
+  .poster img {
+    width: 190px;
+  }
+
+
+  .rat h3 {
+    font-size: 15px;
+  }
+
+  .rat h4 {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .rat h5 {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  .ani-info h2 {
+    font-size: 20px;
+  }
+
+  .ani-info p {
+    font-size: 16px;
+    height: 50px;
+    overflow: hidden;
+  }
+
+
+  .ani-info h6 {
+    font-size: 15px;
+  }
+  .ani-info h6 a {
+    font-size: 15px;
+  }
+  .content-slide{
+    align-items: center;
+  }
+}
+@media (max-width: 1130px){
+  .rat h3 {
+    font-size: 12px;
+  }
+
+  .rat h4 {
+    font-size: 10px;
+  }
+
+  .rat h5 {
+    font-size: 10px;
+    margin-left: 8px;
+  }
+
+  .ani-info h2 {
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  .main-content .left{
+    width: 40%;
+    margin-right: 0;
+  }
+  .main-content .right{
+    width: 55%;
+    max-height: 620px;
+    overflow: hidden;
+    margin-right: 0;
+  }
+
+  #main {
+    flex-direction: column-reverse;
+  }
+  #right{
+    width: 100%;
+    height: fit-content;
+  }
+  #left{
+    width: 100%;
+    height: fit-content;
+  }
+
+}
+
+@media (max-width: 1023px){
+
+
+  
+  .cat {
+    margin: 10px 0;
+  }
+  .cat a {
+    font-size: 14px;
+    padding: 3px 6px;
+  }
+
+  .btn-watch {
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+  }
+  .btn-watch a {
+    font-size: 12px;
+    padding: 4px 9px;
+  }
+
+
+  .box {
+    display: none;
+  }
+  
+  .main-content {
     flex-direction: column;
   }
 
-  .screen-body-item.left {
-    margin-bottom: 30px;
+  .main-content .left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main-content .right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .paragraphe{
+    font-size: 14px;
   }
 
-  .app-title {
-    flex-direction: row;
+}
+
+
+/* Phone screen */
+
+@media (max-width: 800px){
+  .navigation {
+    height: auto;
+    padding: 1rem 1rem;
+    margin: 0;
+  }
+  .logo i {
+    display: none;
+  }
+  .logo a {
+    color: gold;
+    font-size: 10px;
   }
 
-  .app-title span {
-    margin-right: 12px;
+  .nav-list li a {
+    font-size: 8px;
   }
 
-  .app-title:after {
+  .sm {
+    display: none;
+  }
+  .slideshow {
+    width: 100%;
+    height: 30vh;
+  }
+  .poster img {
+    width: 120px;
+  }
+
+  .rat h3 {
+    font-size: 10px;
+  }
+
+  .rat h4 {
+    font-size: 9px;
+  }
+
+  .rat h5 {
+    font-size: 9px;
+    margin-left: 8px;
+  }
+
+  .ani-info h2 {
+    font-size: 16px;
+  }
+
+  .ani-info p {
+    display: none;
+  }
+
+  .ani-info h6 {
+    font-size: 10px;
+  }
+  .cat {
+    margin: 10px 0;
+  }
+  .cat a {
+    font-size: 8px;
+    padding: 3px 6px;
+  }
+
+  .btn-watch {
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+  }
+  .btn-watch a {
+    font-size: 9px;
+    padding: 4px 9px;
+  }
+
+  #aboutt {
+    margin-top: 19px;
+    font-size: 13px;
+  }
+  #about {
+    font-size: 13px;
+  }
+  #num {
     display: none;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .screen-body {
-    padding: 40px;
+@media (max-width: 700px) {
+  a {
+    font-size: 10px;
+  }
+  ul {
+    gap: 1.5rem;
+  }
+ 
+  
+  .main-taitel h5 a {
+    font-size: 14px;
   }
 
-  .screen-body-item {
-    padding: 0;
+  .anime-cart h5 {
+    font-size: 15px;
+  }
+  .ul li a {
+    font-size: 9px;
+  }
+  .anime-cart .ul i {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+  .anime-cart .ul li {
+    margin-right: 4px;
+    margin-left: 0;
+  }
+  
+  .all-anime {
+    margin: 3px 8px;
+  }
+  .all-anime-img img {
+    width: 120px;
+    height: 170px;
+  }
+  .anime-cat,
+  .anime-rat,
+  .anime-view,
+  .anime-resulation {
+    font-size: 9px;
+  }
+  .anime-rat {
+    top: 25px;
+  }
+  .anime-view {
+    top: 45px;
+  }
+  .anime-resulation {
+    top: 65px;
+  }
+  #main {
+    flex-direction: column-reverse;
+  }
+  .paragraphe {
+    display: none;
+  }
+  .screen-body {
+    flex-direction: column;
+  }
+  #aboutt {
+    margin-top: 19px;
+    font-size: 13px;
+  }
+  #about {
+    font-size: 13px;
+  }
+  #num {
+    display: none;
   }
 }
-@media (min-width: 2134px){
-  body{
-    margin: 0 500px;
+@media (max-width: 432px) {
+  .slideshow {
+    height: 28vh;
+  }
+  .logo a {
+    font-size: 9px;
+  }
+  .poster img {
+    width: 100px;
+  }
+
+  .nav-list li a {
+    font-size: 7px;
+  }
+  .rat h3 {
+    font-size: 9px;
+  }
+  .rat h4 {
+    font-size: 8px;
+  }
+  .rat h5 {
+    font-size: 8px;
   }
 }
